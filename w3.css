@@ -189,10 +189,10 @@ table {
     display: table
 }
 /*
-TODO CHANGE THIS BACK TO NONE
+TODO CHANGE THIS BACK TO NONE 1px solid black
 */
 table, th, td {
-    border: 1px solid black;
+    border:none ;
 }
 .w3-table-all {
     border: 1px solid #ccc
