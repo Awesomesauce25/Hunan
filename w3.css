@@ -188,8 +188,11 @@ table {
     width: 100%;
     display: table
 }
+/*
+TODO CHANGE THIS BACK TO NONE
+*/
 table, th, td {
-    border: none
+    border: 1px solid black;
 }
 .w3-table-all {
     border: 1px solid #ccc
@@ -714,7 +717,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate, input[type=radio].w3-radio:
     margin: auto
 }
 .w3-rest {
-    overflow: hidden
+    overflow: hidden;
+    float:center;
 }
 .w3-hide {
     display: none!important
@@ -1353,14 +1357,17 @@ input[type=checkbox].w3-check:disabled+.w3-validate, input[type=radio].w3-radio:
     border-bottom: 3px solid #eee;
 }
 table.food{
-    padding-left: 20%;
+
     text-align:left;
 
 }
 table.price{
-    padding-right: 20%;
+
     text-align:right;
 
+}
+table.description{
+    font-size: small;
 }
 /* Start of colors */
 
