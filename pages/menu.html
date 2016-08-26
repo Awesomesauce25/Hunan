@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>Hunan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../home.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+  <li class="w3-hide-small"><a href="menu.html" class="w3-padding-large">MENU</a></li>
+  <li class="w3-hide-small"><a href="../home.html#googleMap" class="w3-padding-large">LOCATION</a></li>
+  <li class="w3-hide-small"><a href="../home.html#contact" class=" w3-padding-large">CONTACT</a></li>
+  </li>
+</ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="../home.html">HOME</a></li>
+    <li><a class="w3-padding-large" href="menu.html">MENU</a></li>
+    <li><a class="w3-padding-large" href="../home.html#googleMap">LOCATION</a></li>
+    <li><a class="w3-padding-large" href="../home.html#contact">CONTACT</a></li>
+  </ul>
+</div>
+<!-- this is for the side bar to look at the menu -->
+<div class="w3-quarter w3-margin-bottom w3-padding-48 element">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black">
+      <p class="w3-large">Menu</p>
+    </li>
+    <li class="w3-padding-16"> Appitizer</li>
+    <li class="w3-padding-16">Chef's Special</li>
+    <li class="w3-padding-16">Chicken</li>
+    <li class="w3-padding-16">Pork</li>
+    <li class="w3-padding-16">Beef</li>
+
+    </li>
+  </ul>
+</div>
+
+
+</body>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>
