@@ -6,110 +6,234 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
 </style>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="../home.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
-  <li class="w3-hide-small"><a href="menu.html" class="w3-padding-large">MENU</a></li>
-  <li class="w3-hide-small"><a href="../home.html#googleMap" class="w3-padding-large">LOCATION</a></li>
-  <li class="w3-hide-small"><a href="../home.html#contact" class=" w3-padding-large">CONTACT</a></li>
-  </li>
-</ul>
-</div>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            </li>
+            <li><a href="../home.html" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+            <li class="w3-hide-small"><a href="menu.html" class="w3-padding-large">MENU</a></li>
+            <li class="w3-hide-small"><a href="../home.html#googleMap" class="w3-padding-large">LOCATION</a></li>
+            <li class="w3-hide-small"><a href="../home.html#contact" class=" w3-padding-large">CONTACT</a></li>
+            </li>
+        </ul>
+    </div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <ul class="w3-navbar w3-left-align w3-black">
-    <li><a class="w3-padding-large" href="../home.html">HOME</a></li>
-    <li><a class="w3-padding-large" href="menu.html">MENU</a></li>
-    <li><a class="w3-padding-large" href="../home.html#googleMap">LOCATION</a></li>
-    <li><a class="w3-padding-large" href="../home.html#contact">CONTACT</a></li>
-  </ul>
-</div>
-<!-- this is for the side bar to look at the menu -->
-<div class="w3-row">
-<div class="w3-quarter w3-container w3-padding-48">
-  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-    <li class="w3-black">
-      <p class="w3-large">Menu</p>
-    </li>
-    <li class="w3-padding-16">Appitizer</li>
-    <li class="w3-padding-16">Soup</li>
-    <li class="w3-padding-16">Chef's Special</li>
-    <li class="w3-padding-16">Poultry</li>
-    <li class="w3-padding-16">Pork</li>
-    <li class="w3-padding-16">Beef</li>
-    <li class="w3-padding-16">Seafood</li>
-    <li class="w3-padding-16">Vegtable</li>
-    <li class="w3-padding-16">Chow Mein & Chop Suey</li>
-    <li class="w3-padding-16">Lo Mein</li>
-    <li class="w3-padding-16">Fried Rice</li>
-    <li class="w3-padding-16">Beverages & Dessert</li>
-    <li class="w3-padding-16">Healthy Dishes</li>
-    <li class="w3-padding-16">Combination Special</li>
-    <li class="w3-padding-16">Lunch Special</li>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <ul class="w3-navbar w3-left-align w3-black">
+            <li><a class="w3-padding-large" href="../home.html">HOME</a></li>
+            <li><a class="w3-padding-large" href="menu.html">MENU</a></li>
+            <li><a class="w3-padding-large" href="../home.html#googleMap">LOCATION</a></li>
+            <li><a class="w3-padding-large" href="../home.html#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <!-- this is for the side bar to look at the menu -->
+    <div class="w3-row">
+        <div class="w3-quarter w3-container w3-padding-48">
+            <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                <li class="w3-black">
+                    <p class="w3-large">Menu</p>
+                </li>
+                <li><a class="w3-padding-16" href="#App">Appitizer</a></li>
+                <li><a class="w3-padding-16">Soup</a></li>
+                <li><a class="w3-padding-16">Chef's Special</a></li>
+                <li><a class="w3-padding-16">Poultry</a></li>
+                <li><a class="w3-padding-16">Pork</a></li>
+                <li><a class="w3-padding-16">Beef</a></li>
+                <li><a class="w3-padding-16">Seafood</a></li>
+                <li><a class="w3-padding-16">Vegtable</a></li>
+                <li><a class="w3-padding-16">Chow Mein & Chop Suey</a></li>
+                <li><a class="w3-padding-16">Lo Mein</a></li>
+                <li><a class="w3-padding-16">Fried Rice</a></li>
+                <li><a class="w3-padding-16">Beverages & Dessert</a></li>
+                <li><a class="w3-padding-16">Healthy Dishes</a></li>
+                <li><a class="w3-padding-16">Combination Special</a></li>
+                <li><a class="w3-padding-16">Lunch Special</a></li>
 
-    </li>
-  </ul>
-</div>
-<!-- now this is the actualy menu -->
-<div class="w3-padding-48 w3-container w3-rest">
-<div id="App"class="botomBorderThin">
-<h1 align="center">
-  Appitizer
-</h1>
-</div>
-<h3>Egg roll</h3>
-<h3 align="Right">$1.25</h3>
-</div>
+                </li>
+            </ul>
+        </div>
+        <!-- now this is the actualy menu -->
+        <div class="w3-padding-48 w3-container w3-rest">
+            <h1 align="center" class="botomBorderThick">
+              Menu
+            </h1>
+            <div id="App" class="botomBorderThin">
+                <h2 class="w3-padding-12" align="center">
+                  Appitizer
+                </h2>
+            </div>
+            <table>
+                <tr>
+                  <td class="food">
+                      Egg Roll
+                  </td>
+                  <td class="price">
+                      $1.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Vegtable Egg Roll (2)
+                  </td>
+                  <td class="price">
+                      $1.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Barbecued Spare Ribs (4)
+                  </td>
+                  <td class="price">
+                      $8.45
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Egg Roll
+                  </td>
+                  <td class="price">
+                      $1.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Vegtable Egg Roll (2)
+                  </td>
+                  <td class="price">
+                      $1.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Barbecued Spare Ribs (4)
+                  </td>
+                  <td class="price">
+                      $8.45
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Fried Wonton (6)
+                  </td>
+                  <td class="price">
+                      $2.50
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Fried Chicken Wings (6)
+                  </td>
+                  <td class="price">
+                      $5.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                     Fried Meat Dumplings (6)
+                  </td>
+                  <td class="price">
+                      $4.95
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Beef Cho Cho (4)
+                  </td>
+                  <td class="price">
+                      $6.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Pu Pu Platter (for 2)
+                  </td>
+                  <td class="price">
+                      $8.25
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Cheese Wonton (6)
+                  </td>
+                  <td class="price">
+                      $4.75
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Golden Puff (10)
+                  </td>
+                  <td class="price">
+                      $3.95
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">
+                      Chicken Cho Cho (6)
+                  </td>
+                  <td class="price">
+                      $5.95
+                  </td>
+                </tr>
 
-</div>
+            </table>
+        </div>
+
+    </div>
 
 
 </body>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 4000);
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
-}
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
 </html>
