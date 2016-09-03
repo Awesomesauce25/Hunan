@@ -409,8 +409,8 @@ ul.w3-ul li:last-child {
     transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s
 }
 .w3-sidenav {
-    height: 100%;
-    width: 200px;
+    height: 90%;
+    width: 150px;
     background-color: #fff;
     position: fixed!important;
     z-index: 1;
